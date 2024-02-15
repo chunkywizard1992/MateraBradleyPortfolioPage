@@ -1,0 +1,309 @@
+:root {
+  --pawnee-blue: #003366;
+  --pawnee-yellow: #FFD700;
+  --pawnee-green: #2E8B57;
+  --pawnee-brown: #4d2000;
+  --pawnee-light: #0d0e0d;
+  --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Georgia', serif;
+  --background-image: url('https://wallpapers.com/images/high/parks-and-recreation-zoom-background-n52lf2f8qeiqo8by.jpg');
+}
+
+body, html {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  background-color: var(--pawnee-light);
+  color: var(--pawnee-blue);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  color: var(--pawnee-brown);
+  font-family: var(--font-secondary);
+}
+
+h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+h2 { font-size: 2.5rem; margin-bottom: 0.4rem; }
+h3 { font-size: 2rem; margin-bottom: 0.3rem; }
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a, button {
+  color: var(--pawnee-yellow);
+  font-weight: bold;
+}
+
+header {
+  background-color: rgba(0, 51, 102, 0.8);
+  color: var(--pawnee-yellow);
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--pawnee-yellow);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--pawnee-yellow);
+  color: var(--pawnee-blue);
+}
+
+.welcome-banner, .about-show {
+  background-color: rgba(46, 139, 87, 0.8);
+  color: var(--pawnee-light);
+  padding: 4rem;
+  margin: 2rem;
+  border-radius: 5%;
+  box-shadow: var(--shadow);
+}
+
+.cast-carousel, #fan-favorite-episodes, #behind-the-scenes, #fan-corner, #gallery, #contact {
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 4rem;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+footer {
+  background-color: var(--pawnee-blue);
+  color: var(--pawnee-yellow);
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid var(--pawnee-yellow);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: var(--pawnee-yellow);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 15px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  header, footer {
+      background-color: var(--pawnee-blue);
+  }
+}
+
+.cast-carousel .cast-member, #behind-the-scenes article, #fan-corner article {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cast-carousel .carousel-image, #behind-the-scenes .image-article, #fan-corner article img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .cast-carousel .cast-member, #behind-the-scenes article, #fan-corner article {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .cast-carousel .carousel-image, #behind-the-scenes .image-article, #fan-corner article img {
+      margin-bottom: 10px;
+      margin-right: 0;
+      width: 15%;
+      height: 15%;
+      object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul li {
+      margin-bottom: 0.5rem;
+  }
+}
+
+#behind-the-scenes article img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+#behind-the-scenes .image-article img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+#gallery {
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #gallery .gallery-item {
+      width: calc(50% - 10px);
+      margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #behind-the-scenes .behind-scenes-article {
+      flex-direction: column;
+  }
+
+  #behind-the-scenes .image-article img {
+    max-width: 100%; /* Limit the width to the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    margin: 0 auto
+  }
+}
+
+#behind-the-scenes article img {
+  max-width: 100%; /* Limit the width to the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto
+}
+
+#gallery .gallery-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: var(--pawnee-light);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+#behind-the-scenes .text-container,
+#fan-corner .text-container {
+  padding-left: 15px;
+}
+
+#gallery .photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h1, h2, h3, p, a, button {
+  font-family: var(--font-primary);
+}
+.fan-art-gallery img {
+  max-width: 100%; /* Limit the width to the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto; /* Center the images horizontally */
+}
+
+/* Adjust the size of cosplay images */
+.cosplay-gallery img {
+  max-width: 100%; /* Limit the width to the container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing */
+  margin: 0 auto; /* Center the images horizontally */
+}

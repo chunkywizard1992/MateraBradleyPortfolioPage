@@ -1,0 +1,149 @@
+/* Bradley Matera
+Date: 01/24/24
+Assignment: 3.6 Make it Responsive
+*/
+
+/* Global Styles */
+html {
+  font-size: 100%; /* Sets the base font-size for rem units */
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem; /* Base font size for body */
+  line-height: 1.75; /* Relative line height */
+  font-weight: 400;
+  color: #3d2514;
+  background-image: url(../img/burger-bg.png);
+  background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* Header and Section Styles */
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc045; /* Header background color */
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #3d2514;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 5px #fee7ba;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.hero-subtitle {
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Menu Section */
+.menu-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Adjusted for mobile to have 2 columns */
+  gap: 1rem;
+}
+
+.menu-item {
+  background-color: rgba(255, 192, 69, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Button styles */
+.button {
+  background-color: #bf2222;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 16px 40px;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #ffc045;
+  color: #fff;
+}
+
+/* Price styles */
+.price {
+  background-color: #bf2222;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Features Section */
+.features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for features */
+  gap: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  padding: 30px 0;
+  background-color: #ffc045; /* Footer background color */
+  color: #ffffff;
+}
+
+/* Media Queries */
+@media (min-width: 1025px) {
+  /* Desktop styles */
+  .menu-wrapper {
+    grid-template-columns: repeat(4, 1fr); /* 4

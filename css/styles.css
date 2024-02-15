@@ -1,0 +1,343 @@
+/* General Styles */
+body, html {
+    font-family: 'Helvetica', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: color 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+}
+
+a
+:hover {
+    color: #E27D60;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a202c; /* Adjusted to a darker shade for better contrast */
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Navigation Styles */
+nav a {
+    margin-left: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a
+:hover {
+    color: #E27D60;
+}
+
+/* Banner Section */
+#home {
+    background: linear-gradient(to right, #6D7B8D, #4D5764); /* Adjusted gradient colors */
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+#about {
+    position: relative;
+    z-index: 1;
+    background-image: url('/images/Collage\ of\ coding\ languages\ and\ technologies.png'); 
+    background-size: cover;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.6); /* Adjust transparency as needed */
+    pointer-events: none; /* This allows clicks to pass through to elements below */
+}
+
+#about .container {
+    position: relative;
+    z-index: 3; /* This will ensure the container and its children are above the overlay */
+}
+
+
+#about .section {
+    flex: 1;
+    max-width: 400px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+
+#about h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 2rem;
+}
+
+
+
+
+#about h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Adjusted background color */
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skill-set {
+    margin-bottom: 2rem;
+}
+
+.skill-set i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #E27D60;
+}
+
+.skill-set h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.skill-set p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666666;
+}
+
+/* Work & Experience Section */
+#work {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+#work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project
+:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.project h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+.project p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+/* Healthcare & Community Skills Section */
+#healthcare-community-skills {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Adjusted background color */
+}
+
+#healthcare-community-skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#healthcare-community-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+#healthcare-community-skills p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #666666;
+}
+
+#contact .flex {
+    justify-content: center;
+    align-items: center;
+}
+
+#contact a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #1a202c;
+}
+
+#contact a
+:hover {
+    color: #E27D60;
+}
+
+/* Footer */
+footer {
+    background-color: #1a202c; /* Adjusted background color */
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+footer a
+:hover {
+    color: #E27D60;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    #about .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .section {
+        width: 80%;
+    }
+}
+.work-experience-section {
+    position: relative;
+    color: #ffffff;
+}
+
+.work-experience-section .bg-cover {
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.work-experience-section .bg-cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    z-index: -1;
+}
+
+.work-experience-section h3,
+.work-experience-section p {
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 960px) {
+   .work-experience-section {
+        padding: 4rem 0;
+    }
+}
+.work-experience-section.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+}

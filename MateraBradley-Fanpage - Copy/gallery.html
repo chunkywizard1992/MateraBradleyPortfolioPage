@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parks and Recreation Fan Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/parks-and-rec-logo.png" alt="Parks and Recreation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html" rel="noopener">Home</a></li>
+                <li><a href="./cast.html" rel="noopener">Cast</a></li>
+                <li><a href="./episodes.html" rel="noopener">Episodes</a></li>
+                <li><a href="./behind-the-scenes.html" rel="noopener">Behind the Scenes</a></li>
+                <li><a href="./fan-corner.html" rel="noopener">Fan Corner</a></li>
+                <li><a href="./gallery.html" rel="noopener">Gallery</a></li>
+                <li><a href="./contact.html" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section about-show" role="region">
+            <h2>Themed Photo Galleries</h2>
+            <p>[Curated photo galleries, each following a specific theme like "Ron Swanson’s Best Moments".]</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>Interactive Photo Essays</h2>
+            <p>[Detailed stories and context behind significant photos.]</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>Fan-Submitted Photos</h2>
+            <p>[A section dedicated to fan-submitted photographs related to the show.]</p>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Bradley Matera - <span id="current-year"></span></p>
+            <div class="footer-links">
+                <a href="#!">Home</a>
+                <a href="#!">Contact</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="social-media">
+                <a href="#!" target="_blank" aria-label="Twitter"><img src="images/ph.jpg" alt="Twitter"></a>
+                <a href="#!" target="_blank" aria-label="Facebook"><img src="images/ph.jpg" alt="Facebook"></a>
+                <a href="#!" target="_blank" aria-label="Instagram"><img src="images/ph.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

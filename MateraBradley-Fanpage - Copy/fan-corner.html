@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parks and Recreation Fan Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/parks-and-rec-logo.png" alt="Parks and Recreation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html" rel="noopener">Home</a></li>
+                <li><a href="./cast.html" rel="noopener">Cast</a></li>
+                <li><a href="./episodes.html" rel="noopener">Episodes</a></li>
+                <li><a href="./behind-the-scenes.html" rel="noopener">Behind the Scenes</a></li>
+                <li><a href="./fan-corner.html" rel="noopener">Fan Corner</a></li>
+                <li><a href="./gallery.html" rel="noopener">Gallery</a></li>
+                <li><a href="./contact.html" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section about-show" role="region">
+            <h2>Fan Art Showcase</h2>
+            <p>[A diverse gallery of fan art categorized by style.]</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>Discussion Forum</h2>
+            <p>[An interactive section for fans to engage in discussions and share theories.]</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>Fan Events Calendar</h2>
+            <p>[A regularly updated calendar featuring upcoming fan conventions and meetups.]</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>Fan Spotlight</h2>
+            <p>[Interviews and features on notable fans, highlighting their contributions.]</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Bradley Matera - <span id="current-year"></span></p>
+            <div class="footer-links">
+                <a href="#!">Home</a>
+                <a href="#!">Contact</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="social-media">
+                <a href="#!" target="_blank" aria-label="Twitter"><img src="images/ph.jpg" alt="Twitter"></a>
+                <a href="#!" target="_blank" aria-label="Facebook"><img src="images/ph.jpg" alt="Facebook"></a>
+                <a href="#!" target="_blank" aria-label="Instagram"><img src="images/ph.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

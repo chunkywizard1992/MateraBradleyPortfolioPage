@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parks and Recreation Fan Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/parks-and-rec-logo.png" alt="Parks and Recreation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html" rel="noopener">Home</a></li>
+                <li><a href="./cast.html" rel="noopener">Cast</a></li>
+                <li><a href="./episodes.html" rel="noopener">Episodes</a></li>
+                <li><a href="./behind-the-scenes.html" rel="noopener">Behind the Scenes</a></li>
+                <li><a href="./fan-corner.html" rel="noopener">Fan Corner</a></li>
+                <li><a href="./gallery.html" rel="noopener">Gallery</a></li>
+                <li><a href="./contact.html" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section about-show" role="region">
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us with any questions, comments, or suggestions you might have. We'd love to hear from you!</p>
+            <form action="/submit" method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="faq-section">
+            <h2>FAQ</h2>
+            <p>Here are some answers to frequently asked questions about the show and navigating our website:</p>
+            <ul>
+                <li><strong>Q: How can I watch Parks and Recreation episodes online?</strong><br>
+                A: You can watch full episodes on popular streaming platforms like Netflix, Hulu, and Amazon Prime Video.</li>
+
+                <li><strong>Q: Is the entire cast returning for a Parks and Recreation reunion?</strong><br>
+                A: While there have been rumors, there's no official confirmation of a reunion at this time.</li>
+
+                <li><strong>Q: How can I get involved in fan discussions?</strong><br>
+                A: Visit our Fan Corner section for forums and discussions with fellow fans!</li>
+            </ul>
+        </section>
+        <section class="newsletter-signup">
+            <h2>Newsletter Signup</h2>
+            <p>Stay updated with the latest news, episode releases, and exclusive content by subscribing to our newsletter.</p>
+            <form action="/subscribe" method="POST">
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="social-media-links">
+            <h2>Follow Us</h2>
+            <p>Connect with us on social media to get the latest updates, behind-the-scenes insights, and fan art:</p>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Bradley Matera - <span id="current-year"></span></p>
+            <div class="footer-links">
+                <a href="#!">Home</a>
+                <a href="#!">Contact</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="social-media">
+                <a href="#!" target="_blank" aria-label="Twitter"><img src="images/ph.jpg" alt="Twitter"></a>
+                <a href="#!" target="_blank" aria-label="Facebook"><img src="images/ph.jpg" alt="Facebook"></a>
+                <a href="#!" target="_blank" aria-label="Instagram"><img src="images/ph.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

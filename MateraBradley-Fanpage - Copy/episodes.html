@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parks and Recreation Fan Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/parks-and-rec-logo.png" alt="Parks and Recreation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html" rel="noopener">Home</a></li>
+                <li><a href="./cast.html" rel="noopener">Cast</a></li>
+                <li><a href="./episodes.html" rel="noopener">Episodes</a></li>
+                <li><a href="./behind-the-scenes.html" rel="noopener">Behind the Scenes</a></li>
+                <li><a href="./fan-corner.html" rel="noopener">Fan Corner</a></li>
+                <li><a href="./gallery.html" rel="noopener">Gallery</a></li>
+                <li><a href="./contact.html" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section about-show" role="region">
+            <h1>Pawnee Adventures: A Journey Through Episodes</h1>
+            <p>Welcome to the comprehensive episode guide of 'Parks and Recreation'! Here, you'll find detailed descriptions of each episode, fan reviews, and interesting trivia. Whether you're revisiting your favorite episodes or exploring them for the first time, this journey through Pawnee promises endless laughter and heartfelt moments.</p>
+        </section>
+        <section class="grid-section about-show" role="region">
+            <h2>About the Episodes</h2>
+            <p>Discover the hilarious and heartwarming episodes that make 'Parks and Recreation' a beloved series. From the pilot episode to the memorable finale, each installment contributes to the show's enduring legacy.</p>
+        </section>
+        <main id="episodes-page">
+            <section class="grid-section about-show" role="region">
+                <h2>Episode Explorer</h2>
+                <p>Embark on a detailed journey through every episode of 'Parks and Recreation'. From the pilot that introduced us to the vibrant world of Pawnee to the heartfelt finale, discover the storylines, character arcs, and memorable moments that define this iconic series. Each episode listing includes trivia, notable quotes, and fan insights.</p>
+
+                <article class="episode">
+                    <h3>"Pilot" - Season 1, Episode 1</h3>
+                    <p>Where it all began. Meet Leslie Knope, the eternally optimistic bureaucrat, and her quirky team. The episode sets the stage for the series with its unique blend of humor and heart.</p>
+                    <p><strong>Air Date:</strong> April 9, 2009</p>
+                    <p><strong>Director:</strong> Greg Daniels</p>
+                    <p><strong>Trivia:</strong> This episode was the world's first glimpse into the Parks and Recreation Department of Pawnee, Indiana.</p>
+                </article>
+            </section>
+        </main>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Bradley Matera - <span id="current-year"></span></p>
+            <div class="footer-links">
+                <a href="#!">Home</a>
+                <a href="#!">Contact</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="social-media">
+                <a href="#!" target="_blank" aria-label="Twitter"><img src="images/ph.jpg" alt="Twitter"></a>
+                <a href="#!" target="_blank" aria-label="Facebook"><img src="images/ph.jpg" alt="Facebook"></a>
+                <a href="#!" target="_blank" aria-label="Instagram"><img src="images/ph.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

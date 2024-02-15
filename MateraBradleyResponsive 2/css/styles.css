@@ -1,0 +1,240 @@
+/* Name: Bradley Matera
+  Date: January 25, 2024
+  Assignment: 2.6 Burger Website
+/* Global Styles */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #3d2514;
+  background-image: url(../img/burger-bg.png);
+  background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a, a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* Header styles */
+header {
+  background-color: #ffc045;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.hero-title {
+  order: 1;
+  font-size: 4.5rem;
+  color: #000;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  line-height: 1;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #fff;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.4;
+  order: 3;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.hero-image {
+  order: 2;
+  width: 90%;
+  max-height: auto;
+  align-self: right;
+  padding-left: 1rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Menu Section */
+.menu-title {
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.menu-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.menu-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-item {
+  background-color: rgba(255, 192, 69, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-burger {
+  color: #7e3d11;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.menu-description {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Price styles */
+.price {
+  font-size: 1.5rem;
+  color: #180303;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  background-color: #f30d0d;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+/* Features Section */
+.features-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #0b0a0a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #0c0b0b;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-item {
+  background-color: rgba(233, 222, 7, 0.8);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.features-item h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.features-item p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .menu-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-title, .section-title, .menu-burger, .price {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .menu-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  .menu-wrapper {
+    header {
+      padding: 20px 0;
+    }
+    .hero-wrapper, .menu-title {
+      padding-left: 5%;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  .hero-wrapper {
+    flex: 1;
+    text-align: left;
+  }
+  .header-hero-image {
+    max-width: 600px;
+  }
+  .menu-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+footer {
+  background-color: #261a03ef;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+}

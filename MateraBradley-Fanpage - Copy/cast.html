@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parks and Recreation Fan Site</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/parks-and-rec-logo.png" alt="Parks and Recreation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html" rel="noopener">Home</a></li>
+                <li><a href="./cast.html" rel="noopener">Cast</a></li>
+                <li><a href="./episodes.html" rel="noopener">Episodes</a></li>
+                <li><a href="./behind-the-scenes.html" rel="noopener">Behind the Scenes</a></li>
+                <li><a href="./fan-corner.html" rel="noopener">Fan Corner</a></li>
+                <li><a href="./gallery.html" rel="noopener">Gallery</a></li>
+                <li><a href="./contact.html" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-section about-show" role="region">
+            <h2>About the Cast</h2>
+            <p>Get to know the incredible actors and actresses who portrayed the beloved characters in Pawnee's local government. Explore their backgrounds, acting careers, and memorable moments on the show.</p>
+        </section>
+        <section id="cast-carousel">
+            <section class="grid-section about-show" role="region">
+            <h2>Meet the Cast</h2>
+            <div class="cast-carousel">
+                <div class="cast-member">
+                    <img src="images/leslie-knope.jpg" alt="Leslie Knope - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Leslie Knope</h3>
+                        <p>Leslie Knope, portrayed by Amy Poehler, is the energetic and dedicated Deputy Director of the Parks Department. Known for her unbridled enthusiasm and ambitious nature, Leslie is the driving force behind many of Pawnee's community projects.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/ron-swanson.jpg" alt="Ron Swanson - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Ron Swanson</h3>
+                        <p>Ron Swanson, played by Nick Offerman, is the stoic and mustachioed Director of the Parks Department. A man of few words but many talents, Ron is known for his love of woodworking, breakfast foods, and his libertarian views.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/tom-haverford.jpg" alt="Tom Haverford - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Tom Haverford</h3>
+                        <p>Tom Haverford, portrayed by Aziz Ansari, is the sartorially savvy and entrepreneurial Parks Department employee. Always on the lookout for the next big business idea, Tom's flair for the dramatic and unique catchphrases make him a memorable character.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/april-ludgate.jpg" alt="April Ludgate - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>April Ludgate</h3>
+                        <p>April Ludgate, played by Aubrey Plaza, is known for her deadpan delivery and eclectic interests. As Ron Swanson's assistant, April often displays a seemingly apathetic demeanor, which hides a more caring and involved side.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/andy-dwyer.jpg" alt="Andy Dwyer - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Andy Dwyer</h3>
+                        <p>Andy Dwyer, portrayed by Chris Pratt, is the lovable and goofy shoe-shiner turned Parks Department employee. His childlike enthusiasm and musical aspirations as the frontman of Mouse Rat add a layer of humor and charm to the show.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/ph.jpg" alt="Donna Meagle - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Donna Meagle</h3>
+                        <p>Donna Meagle, played by Retta, is the sassy and confident office manager of the Parks Department. Known for her "Treat Yo' Self" mantra, Donna's larger-than-life personality and love for luxury make her a fan favorite.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/ph.jpg" alt="Jerry Gergich - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>Jerry Gergich</h3>
+                        <p>Jerry Gergich, portrayed by Jim O'Heir, is the lovable but often teased senior staff member in the Parks Department. Despite being the butt of many jokes, Jerry's kind heart and dedication to his family are endearing qualities.</p>
+                    </div>
+                </div>
+                <div class="cast-member">
+                    <img src="images/new-cast-member-1.jpg" alt="New Cast Member 1 - Character from Parks and Recreation" width="200" height="300">
+                    <div class="cast-member-info">
+                        <h3>New Cast Member 1</h3>
+                        <p>New Cast Member 1, portrayed by [Actor Name], is the latest addition to the Parks Department. With a unique personality and quirky traits, they bring a fresh dynamic to the team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Bradley Matera - <span id="current-year"></span></p>
+            <div class="footer-links">
+                <a href="#!">Home</a>
+                <a href="#!">Contact</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="social-media">
+                <a href="#!" target="_blank" aria-label="Twitter"><img src="images/ph.jpg" alt="Twitter"></a>
+                <a href="#!" target="_blank" aria-label="Facebook"><img src="images/ph.jpg" alt="Facebook"></a>
+                <a href="#!" target="_blank" aria-label="Instagram"><img src="images/ph.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
