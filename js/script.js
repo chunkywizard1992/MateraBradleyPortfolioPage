@@ -48,9 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'A travel portfolio and blog hosted on GitHub with an active site.',
             image: 'https://via.placeholder.com/300',
             link: 'https://github.com/BradleyMatera/WDV-119-Bradley-Matera'
+        },
+        {
+            title: 'JS Portfolios',
+            description: 'A collection of JavaScript projects demonstrating various programming concepts and techniques.',
+            image: 'https://via.placeholder.com/300',
+            link: 'https://github.com/BradleyMatera/JS-Portfolios'
+        },
+        {
+            title: 'Best of React',
+            description: 'A repository showcasing the best React projects and components I have developed.',
+            image: 'https://via.placeholder.com/300',
+            link: 'https://github.com/BradleyMatera/best-of-react'
         }
     ];
-
+    
     const projectContainer = document.getElementById('project-container');
     projects.forEach(project => {
         const projectElement = document.createElement('div');
@@ -63,4 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         projectContainer.appendChild(projectElement);
     });
-});
+    
