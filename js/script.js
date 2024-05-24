@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link: 'https://github.com/BradleyMatera/best-of-react'
         }
     ];
-    
+
     const projectContainer = document.getElementById('project-container');
     projects.forEach(project => {
         const projectElement = document.createElement('div');
@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         projectContainer.appendChild(projectElement);
     });
+});
