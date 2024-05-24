@@ -18,7 +18,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background-color: #1a202c; /* Adjusted to a darker shade for better contrast */
+    background-color: #1a202c;
     padding: 1rem 0;
 }
 
@@ -31,18 +31,24 @@ header .container {
 header h1 {
     font-size: 2rem;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 header p {
     font-size: 0.8rem;
     margin: 0;
     color: #ffffff;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     margin-left: 1.5rem;
     color: #ffffff;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
 nav a:hover {
@@ -51,7 +57,7 @@ nav a:hover {
 
 /* Banner Section */
 #home {
-    background: linear-gradient(to right, #6D7B8D, #4D5764); /* Adjusted gradient colors */
+    background: linear-gradient(to right, #6D7B8D, #4D5764);
     color: #ffffff;
     padding: 4rem 0;
     text-align: center;
@@ -84,13 +90,13 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
-    pointer-events: none; /* This allows clicks to pass through to elements below */
+    background-color: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
 }
 
 #about .container {
     position: relative;
-    z-index: 3; /* This will ensure the container and its children are above the overlay */
+    z-index: 3;
 }
 
 #about h2 {
@@ -120,7 +126,7 @@ nav a:hover {
 /* Skills Section */
 #skills {
     padding: 4rem 0;
-    background-color: #f8f9fa; /* Adjusted background color */
+    background-color: #f8f9fa;
 }
 
 #skills h2 {
@@ -190,7 +196,7 @@ nav a:hover {
 /* Healthcare & Community Skills Section */
 #healthcare-community-skills {
     padding: 4rem 0;
-    background-color: #f8f9fa; /* Adjusted background color */
+    background-color: #f8f9fa;
 }
 
 #healthcare-community-skills h2 {
@@ -247,7 +253,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #1a202c; /* Adjusted background color */
+    background-color: #1a202c;
     color: #ffffff;
     text-align: center;
     padding: 2rem 0;
