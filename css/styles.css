@@ -5,11 +5,13 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
 a {
     transition: color 0.3s ease;
     color: inherit;
     text-decoration: none;
 }
+
 a:hover {
     color: #E27D60;
 }
@@ -19,27 +21,30 @@ header {
     background-color: #1a202c; /* Adjusted to a darker shade for better contrast */
     padding: 1rem 0;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 header h1 {
     font-size: 2rem;
     margin: 0;
 }
+
 header p {
     font-size: 0.8rem;
     margin: 0;
     color: #ffffff;
 }
 
-/* Navigation Styles */
 nav a {
     margin-left: 1.5rem;
     color: #ffffff;
     transition: color 0.3s ease;
 }
+
 nav a:hover {
     color: #E27D60;
 }
@@ -51,10 +56,12 @@ nav a:hover {
     padding: 4rem 0;
     text-align: center;
 }
+
 #home h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 #home p {
     font-size: 1.2rem;
 }
@@ -68,6 +75,7 @@ nav a:hover {
     background-position: center;
     padding: 4rem 0;
 }
+
 #about::after {
     content: '';
     position: absolute;
@@ -79,23 +87,28 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
     pointer-events: none; /* This allows clicks to pass through to elements below */
 }
+
 #about .container {
     position: relative;
     z-index: 3; /* This will ensure the container and its children are above the overlay */
 }
+
 #about h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 #about h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
+
 #about p {
     font-size: 1rem;
     line-height: 1.5;
 }
+
 .section {
     background-color: #ffffff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -109,25 +122,30 @@ nav a:hover {
     padding: 4rem 0;
     background-color: #f8f9fa; /* Adjusted background color */
 }
+
 #skills h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .skill-set {
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .skill-set i {
     font-size: 4rem;
     margin-bottom: 1rem;
     color: #E27D60;
 }
+
 .skill-set h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #333333;
 }
+
 .skill-set p {
     font-size: 1rem;
     line-height: 1.5;
@@ -139,25 +157,30 @@ nav a:hover {
     padding: 4rem 0;
     background-color: #ffffff;
 }
+
 #work h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 .project {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
+
 .project:hover {
     transform: translateY(-10px);
 }
+
 .project h4 {
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #333333;
 }
+
 .project p {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -169,16 +192,19 @@ nav a:hover {
     padding: 4rem 0;
     background-color: #f8f9fa; /* Adjusted background color */
 }
+
 #healthcare-community-skills h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 #healthcare-community-skills h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: #333333;
 }
+
 #healthcare-community-skills p {
     font-size: 1rem;
     line-height: 1.5;
@@ -190,26 +216,31 @@ nav a:hover {
     padding: 4rem 0;
     background-color: #ffffff;
 }
+
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
 }
+
 #contact p {
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
     color: #666666;
 }
+
 #contact .flex {
     justify-content: center;
     align-items: center;
 }
+
 #contact a {
     margin: 0 1rem;
     font-size: 2rem;
     color: #1a202c;
 }
+
 #contact a:hover {
     color: #E27D60;
 }
@@ -221,13 +252,16 @@ footer {
     text-align: center;
     padding: 2rem 0;
 }
+
 footer p {
     margin: 0.5rem 0;
 }
+
 footer a {
     color: #ffffff;
     margin: 0 0.5rem;
 }
+
 footer a:hover {
     color: #E27D60;
 }
@@ -238,16 +272,20 @@ footer a:hover {
         flex-direction: column;
         text-align: center;
     }
+
     nav {
         margin-top: 1rem;
     }
+
     nav a {
         margin: 0.5rem 0;
     }
+
     #about .container {
         flex-direction: column;
         align-items: center;
     }
+
     #about .section {
         width: 80%;
     }
