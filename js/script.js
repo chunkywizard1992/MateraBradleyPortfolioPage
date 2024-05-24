@@ -55,12 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
             image: 'https://via.placeholder.com/300/f59e0b/ffffff?text=JS+Portfolios', // Example image URL
             link: 'https://github.com/BradleyMatera/JS-Portfolios'
         },
-        {
-            title: 'Best of React',
-            description: 'A repository showcasing the best React projects and components I have developed.',
-            image: 'https://via.placeholder.com/300/6366f1/ffffff?text=Best+of+React', // Example image URL
-            link: 'https://github.com/BradleyMatera/best-of-react'
-        }
     ];
 
     const projectContainer = document.getElementById('project-container');
