@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    const projectContainer = document.querySelector('.grid.md\\:grid-cols-2.gap-8');
+    const projectContainer = document.getElementById('project-container');
     projects.forEach(project => {
         const projectElement = document.createElement('div');
         projectElement.classList.add('project', 'transition', 'duration-500', 'ease-in-out', 'transform', 'hover:-translate-y-1', 'hover:shadow-xl');
