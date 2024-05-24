@@ -75,4 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         projectContainer.appendChild(projectElement);
     });
-    
