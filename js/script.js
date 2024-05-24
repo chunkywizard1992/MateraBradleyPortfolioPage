@@ -20,28 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dynamic project loading
     const projects = [
         {
+            title: 'Web Developer Portfolio',
+            description: 'A portfolio showcasing my web development projects and skills.',
+            image: 'https://via.placeholder.com/300',
+            link: 'https://codepen.io/student-account-bradley-matera/full/BaMEejV'
+        },
+        {
             title: 'Mock Travel Blog',
             description: 'A journey through design and content, capturing the essence of travel in a web experience.',
             image: 'https://images.unsplash.com/photo-1565202619567-3dd2320a1656?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            link: 'https://codepen.io/student-account-bradley-matera/pen/MWLPeVY'
+            link: 'https://codepen.io/student-account-bradley-matera/full/MWLPeVY'
         },
         {
-            title: 'Mock Burger Website',
-            description: 'Crafting a delicious online presence for a fictional burger joint, focusing on appetite-stimulating designs.',
-            image: 'images/heroburger.jpg',
-            link: 'https://codepen.io/student-account-bradley-matera/pen/BWVEJ'
+            title: 'Mock Travel Agency',
+            description: 'A fictional travel agency website to demonstrate web development skills.',
+            image: 'https://images.unsplash.com/photo-1565202619567-3dd2320a1656?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            link: 'https://codepen.io/student-account-bradley-matera/full/MWLPeVY'
         },
         {
-            title: 'Mock Fan Page',
-            description: 'A project to engage fandom through multimedia content integration, showcasing my ability to create community-centric platforms.',
-            image: 'images/gallery-pawnee-harvest-festival.jpg',
-            link: 'https://codepen.io/student-account-bradley-matera/pen/WZbVy'
+            title: 'Data Visualization Example',
+            description: 'A data visualization project showcasing the use of various data representation techniques.',
+            image: 'https://via.placeholder.com/300',
+            link: 'https://codepen.io/student-account-bradley-matera/full/dyEYbPO'
         },
         {
-            title: 'YouTube Content',
-            description: 'Produced educational content on UI/UX design and basic web development concepts, sharing insights and personal learning milestones.',
-            image: 'images/hqdefault.jpg',
-            link: 'https://www.youtube.com/channel/UCo4EcyuHEjfSfozw8LrwfZg'
+            title: 'GitHub Travel Portfolio',
+            description: 'A travel portfolio and blog hosted on GitHub with an active site.',
+            image: 'https://via.placeholder.com/300',
+            link: 'https://github.com/BradleyMatera/WDV-119-Bradley-Matera'
         }
     ];
 
